@@ -4,6 +4,14 @@ path = require('path');
 
 const app = express();
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+const PORT = 8080;
+
 //const connection = mysql.createConnection({
 //  host: 'localhost',
 //  user: 'root',
@@ -30,4 +38,4 @@ app.get('/', (req, res) => {
   //);
 });
 
-app.listen(3000);
+app.listen(8080);
