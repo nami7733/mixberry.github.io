@@ -1,2 +1,2 @@
 # mixberry.github.io
-解説は無し
+# 解説は無し
