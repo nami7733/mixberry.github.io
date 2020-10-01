@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = 8080;
+const PORT = 3000;
 
 //const connection = mysql.createConnection({
 //  host: 'localhost',
@@ -38,4 +38,4 @@ app.get('/', (req, res) => {
   //);
 });
 
-app.listen(PORT);
+app.listen(3000);
